@@ -17,11 +17,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
   @IBOutlet weak var accuracyLabel: UILabel!
   @IBOutlet weak var batteryLevelLabel: UILabel!
 
+  private var notificationCountdown = 0
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
     locationManager.delegate = self
     restartUpdatingLocation()
+    Notification.registerNotifications()
   }
 
   @IBAction func onStartTapped(sender: AnyObject) {
@@ -76,6 +79,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     formatter.timeStyle = .MediumStyle
     return formatter.stringFromDate(date)
   }
+
+  private func notify(text: String) {
+    if notificationCountdown == 0 {
+      notificationCountdown = 10
+    }
+
+    notificationCountdown--
+
+    if notificationCountdown == 1 {
+      Notification.send(text)
+    }
+  }
 }
 
 // CLLocationManager Delegate
@@ -87,6 +102,9 @@ extension ExtCLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     if let currentLocation = locations.last as? CLLocation {
       locationUpdateLabel.text =  "[\(currentTime)] accuracy: \(currentLocation.horizontalAccuracy)"
+
+      // Uncomment to see that updates are coming when app is in background
+//      notify(locationUpdateLabel.text!)
     }
   }
 }
