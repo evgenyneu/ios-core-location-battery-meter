@@ -13,6 +13,7 @@
 		2B143BD41A4D4F5B00BDE4F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BD31A4D4F5B00BDE4F4 /* Images.xcassets */; };
 		2B143BD71A4D4F5B00BDE4F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BD51A4D4F5B00BDE4F4 /* LaunchScreen.xib */; };
 		2B143BE31A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BE21A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift */; };
+		2B143BED1A4D4FC100BDE4F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2B143BDC1A4D4F5B00BDE4F4 /* LocationBatterMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationBatterMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B143BE11A4D4F5B00BDE4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B143BE21A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBatterMeterTests.swift; sourceTree = "<group>"; };
+		2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		2B143BBE1A4D4F5B00BDE4F4 = {
 			isa = PBXGroup;
 			children = (
+				2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */,
 				2B143BC91A4D4F5B00BDE4F4 /* LocationBatterMeter */,
 				2B143BDF1A4D4F5B00BDE4F4 /* LocationBatterMeterTests */,
 				2B143BC81A4D4F5B00BDE4F4 /* Products */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B143BD21A4D4F5B00BDE4F4 /* Main.storyboard in Resources */,
+				2B143BED1A4D4FC100BDE4F4 /* Default-568h@2x.png in Resources */,
 				2B143BD71A4D4F5B00BDE4F4 /* LaunchScreen.xib in Resources */,
 				2B143BD41A4D4F5B00BDE4F4 /* Images.xcassets in Resources */,
 			);
@@ -289,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
