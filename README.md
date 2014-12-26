@@ -12,5 +12,5 @@ Here is how I use it:
 
 Important thing to remember is to stop all other apps that use location services, so the app runs in isolation.
 
-<img src="https://raw.githubusercontent.com/evgenyneu/ios-core-location-battery-meter/master/graphics/ios-core-location-power-consumption.png" alt="Core location power consumption meter" width="320" style="border: solid 2px #bbb;">
+<img src="https://raw.githubusercontent.com/evgenyneu/ios-core-location-battery-meter/master/graphics/ios-core-location-power-consumption.png" alt="Core location power consumption meter" width="320" border="1px">
 
