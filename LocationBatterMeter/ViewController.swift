@@ -36,9 +36,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     locationManager.stopUpdatingLocation()
 
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-    accuracyLabel.text = "Desired accuracy \(locationManager.desiredAccuracy)m"
+    accuracyLabel.text = "desiredAccuracy: \(Int(locationManager.desiredAccuracy))m"
 
-    startTimeLabel.text = "Started \(currentTime)"
+    startTimeLabel.text = "Started \(currentDateAndTime)"
 
     updateBatteryLevel()
 
@@ -62,11 +62,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     locationManager.startUpdatingLocation()
   }
 
+  private var currentDateAndTime: String {
+    let date = NSDate()
+    let formatter = NSDateFormatter()
+    formatter.timeStyle = .ShortStyle
+    formatter.dateStyle = .ShortStyle
+    return formatter.stringFromDate(date)
+  }
+
   private var currentTime: String {
     let date = NSDate()
     let formatter = NSDateFormatter()
     formatter.timeStyle = .MediumStyle
-    formatter.dateStyle = .ShortStyle
     return formatter.stringFromDate(date)
   }
 }
