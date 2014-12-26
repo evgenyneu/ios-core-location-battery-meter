@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LocationBatterMeter.xcodeproj">
+      location = "self:LocationBatteryUsageMeter.xcodeproj">
    </FileRef>
 </Workspace>

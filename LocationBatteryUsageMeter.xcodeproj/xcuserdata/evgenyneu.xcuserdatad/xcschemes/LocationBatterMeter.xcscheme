@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B143BC61A4D4F5B00BDE4F4"
-               BuildableName = "LocationBatterMeter.app"
-               BlueprintName = "LocationBatterMeter"
-               ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+               BuildableName = "LocationBatteryUsageMeter.app"
+               BlueprintName = "LocationBatteryUsageMeter"
+               ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B143BDB1A4D4F5B00BDE4F4"
-               BuildableName = "LocationBatterMeterTests.xctest"
-               BlueprintName = "LocationBatterMeterTests"
-               ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+               BuildableName = "LocationBatteryUsageMeterTests.xctest"
+               BlueprintName = "LocationBatteryUsageMeterTests"
+               ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B143BDB1A4D4F5B00BDE4F4"
-               BuildableName = "LocationBatterMeterTests.xctest"
-               BlueprintName = "LocationBatterMeterTests"
-               ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+               BuildableName = "LocationBatteryUsageMeterTests.xctest"
+               BlueprintName = "LocationBatteryUsageMeterTests"
+               ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B143BC61A4D4F5B00BDE4F4"
-            BuildableName = "LocationBatterMeter.app"
-            BlueprintName = "LocationBatterMeter"
-            ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+            BuildableName = "LocationBatteryUsageMeter.app"
+            BlueprintName = "LocationBatteryUsageMeter"
+            ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B143BC61A4D4F5B00BDE4F4"
-            BuildableName = "LocationBatterMeter.app"
-            BlueprintName = "LocationBatterMeter"
-            ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+            BuildableName = "LocationBatteryUsageMeter.app"
+            BlueprintName = "LocationBatteryUsageMeter"
+            ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B143BC61A4D4F5B00BDE4F4"
-            BuildableName = "LocationBatterMeter.app"
-            BlueprintName = "LocationBatterMeter"
-            ReferencedContainer = "container:LocationBatterMeter.xcodeproj">
+            BuildableName = "LocationBatteryUsageMeter.app"
+            BlueprintName = "LocationBatteryUsageMeter"
+            ReferencedContainer = "container:LocationBatteryUsageMeter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

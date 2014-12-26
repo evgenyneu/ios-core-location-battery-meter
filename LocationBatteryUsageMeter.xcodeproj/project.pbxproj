@@ -14,6 +14,7 @@
 		2B143BD71A4D4F5B00BDE4F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BD51A4D4F5B00BDE4F4 /* LaunchScreen.xib */; };
 		2B143BE31A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BE21A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift */; };
 		2B143BED1A4D4FC100BDE4F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */; };
+		2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B143BC71A4D4F5B00BDE4F4 /* LocationBatterMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationBatterMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B143BC71A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationBatteryUsageMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B143BCB1A4D4F5B00BDE4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B143BCC1A4D4F5B00BDE4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B143BCE1A4D4F5B00BDE4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B143BD11A4D4F5B00BDE4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B143BD31A4D4F5B00BDE4F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B143BD61A4D4F5B00BDE4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2B143BDC1A4D4F5B00BDE4F4 /* LocationBatterMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationBatterMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B143BDC1A4D4F5B00BDE4F4 /* LocationBatteryUsageMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationBatteryUsageMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B143BE11A4D4F5B00BDE4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B143BE21A4D4F5B00BDE4F4 /* LocationBatterMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBatterMeterTests.swift; sourceTree = "<group>"; };
 		2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,8 @@
 		2B143BC81A4D4F5B00BDE4F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B143BC71A4D4F5B00BDE4F4 /* LocationBatterMeter.app */,
-				2B143BDC1A4D4F5B00BDE4F4 /* LocationBatterMeterTests.xctest */,
+				2B143BC71A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter.app */,
+				2B143BDC1A4D4F5B00BDE4F4 /* LocationBatteryUsageMeterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +82,7 @@
 		2B143BC91A4D4F5B00BDE4F4 /* LocationBatterMeter */ = {
 			isa = PBXGroup;
 			children = (
+				2B143BEE1A4D50B300BDE4F4 /* Utils */,
 				2B143BCC1A4D4F5B00BDE4F4 /* AppDelegate.swift */,
 				2B143BCE1A4D4F5B00BDE4F4 /* ViewController.swift */,
 				2B143BD01A4D4F5B00BDE4F4 /* Main.storyboard */,
@@ -115,12 +118,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B143BEE1A4D50B300BDE4F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B143BC61A4D4F5B00BDE4F4 /* LocationBatterMeter */ = {
+		2B143BC61A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B143BE61A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatterMeter" */;
+			buildConfigurationList = 2B143BE61A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatteryUsageMeter" */;
 			buildPhases = (
 				2B143BC31A4D4F5B00BDE4F4 /* Sources */,
 				2B143BC41A4D4F5B00BDE4F4 /* Frameworks */,
@@ -130,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = LocationBatterMeter;
+			name = LocationBatteryUsageMeter;
 			productName = LocationBatterMeter;
-			productReference = 2B143BC71A4D4F5B00BDE4F4 /* LocationBatterMeter.app */;
+			productReference = 2B143BC71A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B143BDB1A4D4F5B00BDE4F4 /* LocationBatterMeterTests */ = {
+		2B143BDB1A4D4F5B00BDE4F4 /* LocationBatteryUsageMeterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B143BE91A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatterMeterTests" */;
+			buildConfigurationList = 2B143BE91A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatteryUsageMeterTests" */;
 			buildPhases = (
 				2B143BD81A4D4F5B00BDE4F4 /* Sources */,
 				2B143BD91A4D4F5B00BDE4F4 /* Frameworks */,
@@ -148,9 +159,9 @@
 			dependencies = (
 				2B143BDE1A4D4F5B00BDE4F4 /* PBXTargetDependency */,
 			);
-			name = LocationBatterMeterTests;
+			name = LocationBatteryUsageMeterTests;
 			productName = LocationBatterMeterTests;
-			productReference = 2B143BDC1A4D4F5B00BDE4F4 /* LocationBatterMeterTests.xctest */;
+			productReference = 2B143BDC1A4D4F5B00BDE4F4 /* LocationBatteryUsageMeterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -164,6 +175,11 @@
 				TargetAttributes = {
 					2B143BC61A4D4F5B00BDE4F4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2B143BDB1A4D4F5B00BDE4F4 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -171,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2B143BC21A4D4F5B00BDE4F4 /* Build configuration list for PBXProject "LocationBatterMeter" */;
+			buildConfigurationList = 2B143BC21A4D4F5B00BDE4F4 /* Build configuration list for PBXProject "LocationBatteryUsageMeter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +200,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B143BC61A4D4F5B00BDE4F4 /* LocationBatterMeter */,
-				2B143BDB1A4D4F5B00BDE4F4 /* LocationBatterMeterTests */,
+				2B143BC61A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter */,
+				2B143BDB1A4D4F5B00BDE4F4 /* LocationBatteryUsageMeterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +234,7 @@
 			files = (
 				2B143BCF1A4D4F5B00BDE4F4 /* ViewController.swift in Sources */,
 				2B143BCD1A4D4F5B00BDE4F4 /* AppDelegate.swift in Sources */,
+				2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		2B143BDE1A4D4F5B00BDE4F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B143BC61A4D4F5B00BDE4F4 /* LocationBatterMeter */;
+			target = 2B143BC61A4D4F5B00BDE4F4 /* LocationBatteryUsageMeter */;
 			targetProxy = 2B143BDD1A4D4F5B00BDE4F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -344,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationBatterMeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocationBatteryUsageMeter;
 			};
 			name = Debug;
 		};
@@ -354,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationBatterMeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocationBatteryUsageMeter;
 			};
 			name = Release;
 		};
@@ -372,8 +389,8 @@
 				);
 				INFOPLIST_FILE = LocationBatterMeterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationBatterMeter.app/LocationBatterMeter";
+				PRODUCT_NAME = LocationBatteryUsageMeterTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationBatteryUsageMeter.app/LocationBatteryUsageMeter";
 			};
 			name = Debug;
 		};
@@ -387,15 +404,15 @@
 				);
 				INFOPLIST_FILE = LocationBatterMeterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationBatterMeter.app/LocationBatterMeter";
+				PRODUCT_NAME = LocationBatteryUsageMeterTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationBatteryUsageMeter.app/LocationBatteryUsageMeter";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B143BC21A4D4F5B00BDE4F4 /* Build configuration list for PBXProject "LocationBatterMeter" */ = {
+		2B143BC21A4D4F5B00BDE4F4 /* Build configuration list for PBXProject "LocationBatteryUsageMeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B143BE41A4D4F5B00BDE4F4 /* Debug */,
@@ -404,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B143BE61A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatterMeter" */ = {
+		2B143BE61A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatteryUsageMeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B143BE71A4D4F5B00BDE4F4 /* Debug */,
@@ -412,7 +429,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2B143BE91A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatterMeterTests" */ = {
+		2B143BE91A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatteryUsageMeterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B143BEA1A4D4F5B00BDE4F4 /* Debug */,
