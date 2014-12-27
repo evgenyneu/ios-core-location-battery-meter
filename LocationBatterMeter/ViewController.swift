@@ -38,7 +38,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     locationManager.stopUpdatingLocation()
 
-    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
     accuracyLabel.text = "desiredAccuracy: \(Int(locationManager.desiredAccuracy))m"
 
     startTimeLabel.text = "Started \(currentDateAndTime)"
