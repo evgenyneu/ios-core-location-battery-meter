@@ -1,6 +1,6 @@
-# iOS core locatino power consumption meter
+# Measuring power consumption of location services on iOS
 
-This is a demo iOS app that can help to measure power consumption of core location updates in different modes.
+This is a demo iOS app that can help to measure power consumption of getting location updates in the background.
 
 Here is how I use it:
 
