@@ -56,6 +56,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gDh-Nc-coJ">
+                        <barButtonItem key="leftBarButtonItem" title="Restart" id="Gry-eE-FoJ">
+                            <connections>
+                                <action selector="onStartTapped:" destination="BYZ-38-t0r" id="zIb-Mh-7T9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="View log" id="PhA-Cq-BDi">
                             <connections>
                                 <segue destination="UyJ-ZZ-kfD" kind="show" id="YGD-7l-g83"/>

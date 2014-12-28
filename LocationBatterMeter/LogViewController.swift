@@ -28,4 +28,9 @@ class LogViewController: UIViewController {
     lastLogTime = NSDate()
     locationUpdateTimeLog += text + "\n"
   }
+
+  class func clear() {
+    locationUpdateTimeLog = ""
+    lastLogTime = NSDate().dateByAddingTimeInterval(-100)
+  }
 }

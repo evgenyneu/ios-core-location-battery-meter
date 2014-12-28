@@ -28,6 +28,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
   }
 
   @IBAction func onStartTapped(sender: AnyObject) {
+    LogViewController.clear()
     restartUpdatingLocation()
   }
 
