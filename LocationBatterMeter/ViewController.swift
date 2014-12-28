@@ -73,7 +73,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     return formatter.stringFromDate(date)
   }
 
-  private var currentTime: String {
+  class var currentTime: String {
     let date = NSDate()
     let formatter = NSDateFormatter()
     formatter.timeStyle = .MediumStyle
@@ -101,7 +101,10 @@ typealias ExtCLLocationManagerDelegate = ViewController
 extension ExtCLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     if let currentLocation = locations.last as? CLLocation {
-      locationUpdateLabel.text =  "[\(currentTime)] accuracy: \(currentLocation.horizontalAccuracy)"
+      let text = "[\(ViewController.currentTime)] \(currentLocation.horizontalAccuracy)"
+      locationUpdateLabel.text = text
+
+      LogViewController.add(text)
 
       // Uncomment to see that updates are coming when app is in background
 //      notify(locationUpdateLabel.text!)

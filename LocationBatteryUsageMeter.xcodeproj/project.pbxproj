@@ -16,6 +16,7 @@
 		2B143BED1A4D4FC100BDE4F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */; };
 		2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */; };
 		2B143BF21A4E160700BDE4F4 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BF11A4E160700BDE4F4 /* Notification.swift */; };
+		2BBF00031A4FB123004C4E03 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBF00021A4FB123004C4E03 /* LogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2B143BEC1A4D4FC100BDE4F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiQ.swift; sourceTree = "<group>"; };
 		2B143BF11A4E160700BDE4F4 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2BBF00021A4FB123004C4E03 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				2B143BEE1A4D50B300BDE4F4 /* Utils */,
 				2B143BCC1A4D4F5B00BDE4F4 /* AppDelegate.swift */,
 				2B143BCE1A4D4F5B00BDE4F4 /* ViewController.swift */,
+				2BBF00021A4FB123004C4E03 /* LogViewController.swift */,
 				2B143BF11A4E160700BDE4F4 /* Notification.swift */,
 				2B143BD01A4D4F5B00BDE4F4 /* Main.storyboard */,
 				2B143BD31A4D4F5B00BDE4F4 /* Images.xcassets */,
@@ -237,6 +240,7 @@
 			files = (
 				2B143BF21A4E160700BDE4F4 /* Notification.swift in Sources */,
 				2B143BCF1A4D4F5B00BDE4F4 /* ViewController.swift in Sources */,
+				2BBF00031A4FB123004C4E03 /* LogViewController.swift in Sources */,
 				2B143BCD1A4D4F5B00BDE4F4 /* AppDelegate.swift in Sources */,
 				2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */,
 			);
@@ -432,6 +436,7 @@
 				2B143BE81A4D4F5B00BDE4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B143BE91A4D4F5B00BDE4F4 /* Build configuration list for PBXNativeTarget "LocationBatteryUsageMeterTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +445,7 @@
 				2B143BEB1A4D4F5B00BDE4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

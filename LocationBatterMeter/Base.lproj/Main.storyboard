@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -55,9 +56,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gDh-Nc-coJ">
-                        <barButtonItem key="rightBarButtonItem" title="Restart" id="duW-Fm-q4Z">
+                        <barButtonItem key="rightBarButtonItem" title="View log" id="PhA-Cq-BDi">
                             <connections>
-                                <action selector="onStartTapped:" destination="BYZ-38-t0r" id="a0n-so-dVI"/>
+                                <segue destination="UyJ-ZZ-kfD" kind="show" id="YGD-7l-g83"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -71,6 +72,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1092" y="336"/>
+        </scene>
+        <!--Log-->
+        <scene sceneID="aor-AZ-JlE">
+            <objects>
+                <viewController title="Log" automaticallyAdjustsScrollViewInsets="NO" id="UyJ-ZZ-kfD" customClass="LogViewController" customModule="LocationBatteryUsageMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P7r-wF-vNU"/>
+                        <viewControllerLayoutGuide type="bottom" id="UZD-fb-g37"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ffa-eR-DJh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-wN-ghw">
+                                <rect key="frame" x="26" y="74" width="548" height="516"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UZD-fb-g37" firstAttribute="top" secondItem="VYE-wN-ghw" secondAttribute="bottom" constant="10" id="DSV-9r-whb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VYE-wN-ghw" secondAttribute="trailing" constant="10" id="sbQ-xV-EhO"/>
+                            <constraint firstItem="VYE-wN-ghw" firstAttribute="top" secondItem="P7r-wF-vNU" secondAttribute="bottom" constant="10" id="w04-Ac-BaS"/>
+                            <constraint firstItem="VYE-wN-ghw" firstAttribute="leading" secondItem="ffa-eR-DJh" secondAttribute="leadingMargin" constant="10" id="zh6-41-WKz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="VYE-wN-ghw" id="8pJ-E9-E7j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAw-68-wNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="336"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7N8-ja-efs">
