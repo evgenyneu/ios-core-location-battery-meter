@@ -40,6 +40,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     locationManager.stopUpdatingLocation()
 
     locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    locationManager.pausesLocationUpdatesAutomatically = false
+
     accuracyLabel.text = "desiredAccuracy: \(Int(locationManager.desiredAccuracy))m"
 
     startTimeLabel.text = "Started \(currentDateAndTime)"
@@ -102,7 +104,11 @@ typealias ExtCLLocationManagerDelegate = ViewController
 extension ExtCLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     if let currentLocation = locations.last as? CLLocation {
-      let text = "[\(ViewController.currentTime)] \(currentLocation.horizontalAccuracy)"
+      var text = "[\(ViewController.currentTime)] \(currentLocation.horizontalAccuracy)"
+
+      if locations.count > 1 {
+        text += " multi \(locations.count)"
+      }
       locationUpdateLabel.text = text
 
       LogViewController.add(text)
@@ -110,5 +116,12 @@ extension ExtCLLocationManagerDelegate {
       // Uncomment to see that updates are coming when app is in background
 //      notify(locationUpdateLabel.text!)
     }
+  }
+
+  func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+    let title = "[\(ViewController.currentTime)] Location Error"
+    let message = iiCLErrorToString.toString(error.code) + " " + error.description
+
+    LogViewController.addAlways("\(title) \(message)")
   }
 }

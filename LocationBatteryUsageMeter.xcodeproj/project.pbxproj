@@ -17,6 +17,7 @@
 		2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */; };
 		2B143BF21A4E160700BDE4F4 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B143BF11A4E160700BDE4F4 /* Notification.swift */; };
 		2BBF00031A4FB123004C4E03 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBF00021A4FB123004C4E03 /* LogViewController.swift */; };
+		2BE7A5F21A4FE04000B8846E /* iiCLErrorToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7A5F11A4FE04000B8846E /* iiCLErrorToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiQ.swift; sourceTree = "<group>"; };
 		2B143BF11A4E160700BDE4F4 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		2BBF00021A4FB123004C4E03 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		2BE7A5F11A4FE04000B8846E /* iiCLErrorToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiCLErrorToString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		2B143BEE1A4D50B300BDE4F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2BE7A5F11A4FE04000B8846E /* iiCLErrorToString.swift */,
 				2B143BEF1A4D50BE00BDE4F4 /* iiQ.swift */,
 			);
 			name = Utils;
@@ -241,6 +244,7 @@
 				2B143BF21A4E160700BDE4F4 /* Notification.swift in Sources */,
 				2B143BCF1A4D4F5B00BDE4F4 /* ViewController.swift in Sources */,
 				2BBF00031A4FB123004C4E03 /* LogViewController.swift in Sources */,
+				2BE7A5F21A4FE04000B8846E /* iiCLErrorToString.swift in Sources */,
 				2B143BCD1A4D4F5B00BDE4F4 /* AppDelegate.swift in Sources */,
 				2B143BF01A4D50BE00BDE4F4 /* iiQ.swift in Sources */,
 			);
