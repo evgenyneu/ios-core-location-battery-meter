@@ -39,7 +39,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     locationManager.stopUpdatingLocation()
 
-    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+//    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+
+    // Background location updates will be stopped after ~20 minutes unless we do this
     locationManager.pausesLocationUpdatesAutomatically = false
 
     accuracyLabel.text = "desiredAccuracy: \(Int(locationManager.desiredAccuracy))m"
